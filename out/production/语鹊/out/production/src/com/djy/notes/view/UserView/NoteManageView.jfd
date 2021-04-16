@@ -1,0 +1,156 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "NoteManageView"
+	"i18n.keyPrefix": "NoteManageView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "NoteManageView.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {comp contentPanel:::p:1054:p, space :0:0:x}, seq l {space :::x, comp preBtn:::p::p, space u:::p, comp nextBtn:::p::p, space :p:30:p}}"
+				"$verticalGroup": "par l {seq {comp contentPanel:::p::p, space ::37:x, par b {comp nextBtn::b:p::p, comp preBtn::b:p::p}, space :p:22:p}}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+						name: "jMenuBar"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 1050
+						"height": 20
+						"x": 0
+						"y": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "announceBtn"
+						"text": new FormMessage( null, "NoteManageView.announceBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "announceBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 78
+						"height": 30
+						"x": 45
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addBtn"
+						"text": new FormMessage( null, "NoteManageView.addBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 88
+						"height": 30
+						"x": 140
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "deleteBtn"
+						"text": new FormMessage( null, "NoteManageView.deleteBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 95
+						"height": 30
+						"x": 245
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "updateBtn"
+						"text": new FormMessage( null, "NoteManageView.updateBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updateBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 95
+						"height": 30
+						"x": 355
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "searchField"
+						"toolTipText": "输入用户名或笔记标题进行查询"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 194
+						"height": 30
+						"x": 525
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchBtn"
+						"text": new FormMessage( null, "NoteManageView.searchBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"height": 30
+						"x": 720
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "detailBtn"
+						"text": new FormMessage( null, "NoteManageView.detailBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "detailBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 175
+						"height": 30
+						"x": 840
+						"y": 25
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "notes"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "笔记标题" )
+								add( "创建用户" )
+								add( "发布时间" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							} )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 35
+						"y": 80
+						"width": 985
+						"height": 430
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "preBtn"
+					"text": new FormMessage( null, "NoteManageView.preBtn.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "preBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "nextBtn"
+					"text": new FormMessage( null, "NoteManageView.nextBtn.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "nextBtnActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1080, 655 )
+		} )
+	}
+}

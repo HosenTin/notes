@@ -1,0 +1,97 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.AdminView"
+	"i18n.bundleName": "AdminNotes"
+	"i18n.keyPrefix": "AdminNotes"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AdminNotes.this.title" )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "preBtn"
+				"text": new FormMessage( null, "AdminNotes.preBtn.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "preBtnActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 740
+				"y": 540
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "nextBtn"
+				"text": new FormMessage( null, "AdminNotes.nextBtn.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "nextBtnActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 835
+				"y": 540
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteNoteBtn"
+				"text": new FormMessage( null, "AdminNotes.deleteNoteBtn.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteNoteBtnActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 35
+				"x": 610
+				"y": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "noteDetailBtn"
+				"text": new FormMessage( null, "AdminNotes.noteDetailBtn.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "noteDetailBtnActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 157
+				"height": 35
+				"x": 760
+				"y": 5
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "notes"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "笔记标题" )
+						add( "创建用户" )
+						add( "发布时间" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 155
+				"y": 55
+				"width": 760
+				"height": 470
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1080, 615 )
+		} )
+	}
+}

@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "AnnouncerView"
+	"i18n.keyPrefix": "AnnouncerView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AnnouncerView.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "announces"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "公告标题" )
+								add( "发布时间" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							} )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 0
+						"width": 785
+						"height": 455
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "announceDetailBtn"
+						"text": new FormMessage( null, "AnnouncerView.announceDetailBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "announceDetailBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 770
+						"y": 510
+						"width": 142
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "nextBtn"
+						"text": new FormMessage( null, "AnnouncerView.nextBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "nextBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 78
+						"height": 30
+						"x": 505
+						"y": 465
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "preBtn"
+						"text": new FormMessage( null, "AnnouncerView.preBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "preBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 78
+						"height": 30
+						"x": 390
+						"y": 465
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 950, 610 )
+		} )
+	}
+}

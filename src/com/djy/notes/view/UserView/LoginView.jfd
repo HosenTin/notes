@@ -1,0 +1,129 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "LoginView"
+	"i18n.keyPrefix": "LoginView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "LoginView.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "LoginView.label1.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 3, 24 )
+						"foreground": new java.awt.Color( 255, 51, 0, 255 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 330
+						"height": 52
+						"x": 100
+						"y": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "LoginView.label2.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 60
+						"height": 33
+						"x": 75
+						"y": 100
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "nameField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 240
+						"height": 30
+						"x": 150
+						"y": 105
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "LoginView.label3.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 45
+						"height": 32
+						"x": 85
+						"y": 165
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField"
+						"font": new java.awt.Font( "Monospaced", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 240
+						"height": 30
+						"x": 150
+						"y": 170
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": new FormMessage( null, "LoginView.label4.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 45
+						"height": 28
+						"x": 85
+						"y": 230
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "roleBox"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "用户"
+							addElement( "用户" )
+							addElement( "管理员" )
+						}
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 105
+						"height": 30
+						"x": 150
+						"y": 230
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "loginBtn"
+						"text": new FormMessage( null, "LoginView.loginBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "registerBtn"
+						"text": new FormMessage( null, "LoginView.registerBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 150, 40 )
+			"size": new java.awt.Dimension( 535, 485 )
+		} )
+	}
+}

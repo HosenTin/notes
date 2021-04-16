@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "AddCommentView"
+	"i18n.keyPrefix": "AddCommentView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AddCommentView.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "publishCommentBtn"
+						"text": new FormMessage( null, "AddCommentView.publishCommentBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "publishCommentBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 120
+						"x": 825
+						"y": 410
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "AddCommentView.label1.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 16 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 155
+						"y": 15
+						"width": 85
+						"height": 45
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "commentArea"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 240
+						"y": 30
+						"width": 540
+						"height": 305
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 975, 500 )
+		} )
+	}
+}

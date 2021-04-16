@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "AddNoteView"
+	"i18n.keyPrefix": "AddNoteView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AddNoteView.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "AddNoteView.label1.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 0
+						"width": 85
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "AddNoteView.label2.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 40
+						"width": 80
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "noteTitleField"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 175
+						"y": 0
+						"width": 285
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "noteContentArea"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 85
+						"y": 45
+						"width": 465
+						"height": 360
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addBtn"
+						"text": new FormMessage( null, "AddNoteView.addBtn.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBtnActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 505
+						"y": 440
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "publicBtn"
+						"text": new FormMessage( null, "AddNoteView.publicBtn.text" )
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+						"selected": true
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 85
+						"y": 435
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "privateBtn"
+						"text": new FormMessage( null, "AddNoteView.privateBtn.text" )
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 155
+						"y": 435
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "AddNoteView.label3.text" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 16 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 25
+						"y": 435
+						"width": 45
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 245, 0 )
+			"size": new java.awt.Dimension( 610, 530 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 260, 555 )
+		} )
+	}
+}

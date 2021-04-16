@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.UserView"
+	"i18n.bundleName": "AnnounceDetailView"
+	"i18n.keyPrefix": "AnnounceDetailView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AnnounceDetailView.this.title" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AnnounceDetailView.label1.text" )
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 85
+				"height": 35
+				"x": 120
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "announceTitleField"
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 285
+				"height": 30
+				"x": 345
+				"y": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AnnounceDetailView.label2.text" )
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 35
+				"x": 120
+				"y": 100
+			} )
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "announceContentArea"
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 510
+				"height": 410
+				"x": 245
+				"y": 110
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 940, 610 )
+		} )
+	}
+}

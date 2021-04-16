@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.djy.notes.view.AdminView"
+	"i18n.bundleName": "AdminNoteDetailView"
+	"i18n.keyPrefix": "AdminNoteDetailView"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "AdminNoteDetailView.this.title" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminNoteDetailView.label1.text" )
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 85
+				"height": 27
+				"x": 35
+				"y": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "noteTitleField"
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 285
+				"height": 30
+				"x": 215
+				"y": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AdminNoteDetailView.label2.text" )
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 27
+				"x": 35
+				"y": 80
+			} )
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "noteContentArea"
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 473
+				"height": 343
+				"x": 135
+				"y": 85
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 705, 555 )
+		} )
+	}
+}
